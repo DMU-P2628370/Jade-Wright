@@ -2,10 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    
+    <!-- ***
+         Any element that you want to display on the page should go inside the
+         body element.
+
+         The head element is just for information about the page.
+         *** -->
       <<h1> ALL ABOUT JADE <h1/> </title>
   </head>
 <body>
 
+  <!-- ***
+       This is where all your on-page content should be.
+       
+       These closing body and html elements should go right at the end of the file.
+       *** -->
   </body>
 </html>
 
@@ -34,6 +46,11 @@
 <div>
     <h2> My favourite cocktail bar in Oxford </h2>
 <p> Here is a picture of Victors, a cocktail bar and restaurant in the centre of Oxford </p>
+  
+    <!-- ***
+         You need to upload your images (and other) media to GitHub too. 
+         The browser is going to be looking for a folder called img.
+         *** -->
     <img style='max-width: 100%'src='img/victors.jpeg' alta= 'My Favourite cocktail bar' />
 <p> Victors </p>
   <a href = 'https://www.victors.co.uk'> Victors Website </a>
@@ -41,6 +58,11 @@
   <div>
     <p> Here is an audio file i found, it's the one i liked most off the free sound website lol <p>
 
+     <!-- ***
+          As with the image, these audio files need to be uploaded to GitHub. Your URL tells the browser
+          where to find the file. In these cases, it'll be looking for a folder called Multimedia Atom Lab Session in 
+          your GitHub repository alongside this HTML file.
+          *** -->
 <audio controls="true">
     <source scr="Multimedia Atom Lab Session/Audio/audioFile.mpeg" type="audio/mp3"/>
     <source scr="Multimedia Atom Lab Session/Audio/audioFile.wav" type="audio/wav"/>
@@ -51,8 +73,14 @@
   </audio>
 
   <!--Im not too sure why my audio file says 0.00 seconds when i load this on a web browser-->
+    <!-- ***
+         Aha, because it can't find the files.
+         *** -->
 
 
+    <!-- ***
+         If you use on-page style, this should go inside the head section as it's information about the page.
+         *** -->
 <style>
 h1 {
   color:grey;
