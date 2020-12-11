@@ -1,0 +1,112 @@
+.header h1{
+  text-align: center;
+  color:white;
+  border-style: solid;
+  font-size: 50px;
+}
+
+/* I've chosen to keep the styling of my website quite simple and minimalistic as it is how I personally like things displayed. I find it easier to naviagte around the website and easier to look at */
+
+
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+}
+
+nav a{
+  color:black;
+  text-decoration: none;
+  padding: 10px;
+  flex-grow: 1;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.1s background-color;
+  font-size: 25px;
+}
+
+nav a:hover{
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+
+
+.castmembers{
+  font-size: 25px;
+}
+
+h2{
+  text-align: center;
+  color:black;
+  border-style: solid;
+  font-size: 35px;
+}
+
+h3{
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+body{
+  background-color: grey;
+}
+
+
+
+
+.cast{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.cast p{
+  font-size: 20px;
+  text-align: center;
+  font-family: serif;
+}
+
+.casttext{
+  border-style:solid;
+  border-color: rgb(60,60,60);
+  border-radius: 10px;
+  border-width: thin;
+}
+
+img{
+  border-style: solid;
+  border-color: rgb(60,60,60);
+  border-radius: 10px;
+}
+
+.audiobox{
+  border-style: solid;
+  border-color: rgb(60,60,60);
+  border-radius: 10px;
+}
+
+
+.audio{
+  display: block;
+  margin: auto;
+}
+
+.synopsis p{
+  font-size: 20px;
+  text-align: center;
+  font-family: serif;
+}
+
+.video {
+  display: block;
+  margin: auto;
+}
+
+.footer{
+  font-size: 20px;
+}
