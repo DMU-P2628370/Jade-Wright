@@ -1,0 +1,126 @@
+/* here is my separate stylesheet that links to both pages of my website*/
+
+
+.header h1{
+  text-align: center;
+  color:white;
+  border-style: solid;
+  font-size: 50px;
+}
+
+/* I've chosen to keep the styling of my website quite simple and minimalistic as it is how I personally like things displayed. I find it easier to naviagte around the website and easier to look at */
+
+
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+}
+
+nav a{
+  color:black;
+  text-decoration: none;
+  padding: 10px;
+  flex-grow: 1;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.1s background-color;
+  font-size: 25px;
+}
+
+nav a:hover{
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+/* i got information from w3schools to learn how to make my menu have the hover style added to it*/
+
+
+.castmembers{
+  font-size: 25px;
+}
+
+h2{
+  text-align: center;
+  color:black;
+  border-style: solid;
+  font-size: 35px;
+}
+
+h3{
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+body{
+  background-color: grey;
+}
+
+
+
+
+.cast{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+/*  i added 'height' here to match the size od the image so both elements would align perfectly. i did this with no reseach, just experimented and this is what worked. i had been struggling for day to get them aligned so for me this was really awarding */
+
+.cast p{
+  font-size: 17px;
+  text-align: center;
+  font-family: serif;
+  margin: 10px 10px;
+}
+
+.casttext{
+  border-style:solid;
+  border-color: rgb(60,60,60);
+  border-radius: 10px;
+  border-width: thin;
+}
+
+.cast img{
+  border-style: solid;
+  border-color: rgb(60,60,60);
+  border-radius: 10px;
+  border-width: thick;
+  width:300px;
+  height:365px;
+}
+
+.audiobox{
+  border-style: solid;
+  border-color: rgb(60,60,60);
+  border-radius: 10px;
+  border-width: thin;
+}
+
+
+.audio{
+  display: block;
+  margin: auto;
+}
+
+.synopsis p{
+  font-size: 20px;
+  text-align: center;
+  font-family: serif;
+}
+
+/* i learnt from w3schools how to style things within a class, for example here, the p comes after the class name to style the p inside that class*/
+.video {
+  display: block;
+  margin: auto;
+}
+
+.footer{
+  font-size: 20px;
+}
+
+/* the majority of my styling i learnt from w3schools.com, for example how style the class by adding a '.' at the beginning of a class name. */
