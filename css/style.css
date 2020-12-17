@@ -63,10 +63,14 @@ body{
 
 
 /*  i added 'height' here to match the size od the image so both elements would align perfectly. i did this with no reseach, just experimented and this is what worked. i had been struggling for day to get them aligned so for me this was really awarding */
+.castt h3{
+  margin:10px;
+}
+/* i added a margin to my heading within the castt class to close the gap between it and the <p> element */
 
 .castt p{
   font-size: 18px;
-  text-align: center;
+  text-align: justify;
   font-family: serif;
   margin: 10px 10px;
 }
@@ -78,8 +82,8 @@ body{
   border-radius: 10px;
   border-width: thick;
   float: left;
-  max-width:200px;
-  max-height: 250px;
+  width:200px;
+  height: 250px;
   margin: auto;
 }
 
