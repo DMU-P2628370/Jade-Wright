@@ -70,9 +70,9 @@ body{
 
 .castt p{
   font-size: 18px;
-  text-align: justify;
+  text-align: center;
   font-family: serif;
-  margin: 10px 10px;
+  margin: 3px;
 }
 
 
@@ -82,7 +82,7 @@ body{
   border-radius: 10px;
   border-width: thick;
   float: left;
-  width:200px;
+  width: 200px;
   height: 250px;
   margin: auto;
 }
@@ -92,6 +92,8 @@ body{
   display: block;
   clear: both;
 }
+
+
 
 
 
