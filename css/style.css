@@ -1,3 +1,5 @@
+/* here is my separate stylesheet that links to both pages of my website*/
+
 .header h1{
   text-align: center;
   color:white;
@@ -31,6 +33,7 @@ nav a:hover{
   background-color: rgba(255, 0, 0, 0.3);
 }
 
+/* i got information from w3schools to learn how to make my menu have the hover style added to it*/
 
 
 .castmembers{
@@ -58,36 +61,42 @@ body{
 
 
 
-.cast{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: space-around;
-}
 
-.cast p{
+/*  i added 'height' here to match the size od the image so both elements would align perfectly. i did this with no reseach, just experimented and this is what worked. i had been struggling for day to get them aligned so for me this was really awarding */
+
+.castt p{
   font-size: 20px;
   text-align: center;
   font-family: serif;
+  margin: 10px 10px;
 }
 
-.casttext{
-  border-style:solid;
-  border-color: rgb(60,60,60);
-  border-radius: 10px;
-  border-width: thin;
-}
 
-img{
+.castt img{
   border-style: solid;
   border-color: rgb(60,60,60);
   border-radius: 10px;
+  border-width: thick;
+  float: left;
+  max-width:275px;
+  max-height:350px;
+  margin: auto;
 }
+
+.castt::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
 
 .audiobox{
   border-style: solid;
   border-color: rgb(60,60,60);
   border-radius: 10px;
+  border-width: thin;
+  margin: 29px;
 }
 
 
@@ -102,11 +111,19 @@ img{
   font-family: serif;
 }
 
+/* i learnt from w3schools how to style things within a class, for example here, the p comes after the class name to style the p inside that class*/
 .video {
   display: block;
-  margin: auto;
+  border-style: solid;
+  border-color: rgb(60,60,60);
+  border-radius: 10px;
 }
 
 .footer{
   font-size: 20px;
+  text-align: center;
+  color:black;
+  border-style: solid;
 }
+
+/* the majority of my styling i learnt from w3schools.com, for example how style the class by adding a '.' at the beginning of a class name. */
