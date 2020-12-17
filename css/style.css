@@ -70,7 +70,7 @@ body{
 
 .castt p{
   font-size: 18px;
-  text-align: center;
+  text-align: left;
   font-family: serif;
   margin: 3px;
 }
@@ -84,7 +84,7 @@ body{
   float: left;
   width: 200px;
   height: 250px;
-  margin: auto;
+  margin: 10px;
 }
 
 .castt::after{
