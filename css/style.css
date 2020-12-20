@@ -7,8 +7,9 @@
   font-size: 50px;
 }
 
-/* I've chosen to keep the styling of my website quite simple and minimalistic as it is how I personally like things displayed. I find it easier to naviagte around the website and easier to look at */
+/* I've chosen to keep the styling of my website quite simple and minimalistic as it is how I personally like things displayed. I find it easier to naviagte around the website and it is more pleasing to look at */
 
+/*the colors i chose to style my website with dont necessarily match my film theme, however they do not clash with it and i found that after testing colours such as dark/navy blue, red, white made the website too dark so i stuck with lighter colours that complimented the film colours and made it stand it. */
 
 
 nav{
@@ -34,6 +35,7 @@ nav a:hover{
 }
 
 /* i got information from w3schools to learn how to make my menu have the hover style added to it*/
+/* a lot of my css i learnt from w3schools as i found it easy to understand and follow */
 
 
 .castmembers{
@@ -60,15 +62,12 @@ body{
   background-color: grey;
 }
 
+/* i didnt give these class names as i wanted them the same on both pages of my website so therefore didnt need a class added to the elements */
 
-
-
-
-/*  i added 'height' here to match the size od the image so both elements would align perfectly. i did this with no reseach, just experimented and this is what worked. i had been struggling for day to get them aligned so for me this was really awarding */
 .castt h3{
   margin:4px;
 }
-/* i added a margin to my heading within the castt class to close the gap between it and the <p> element */
+/* i added a margin to my heading within the castt class to close the gap between it and the <p> element  */
 
 .castt p{
   font-size: 18px;
@@ -96,7 +95,7 @@ body{
 }
 
 
-
+/*here i changed from flexbox to float. this is because flexbox was not providing the flexibility i needeed. using float allowed me to wrap my text around my image instead of it being stuck in one column it was restricted to in flebox*/
 
 
 .audiobox{
@@ -107,11 +106,13 @@ body{
   margin: 7px;
 }
 
+/*all margins that are added in aboved i added to give the perfect spacing between elements, before they had too big of a margin making the text sit way too far down beside the image, so making the margin between each element samller moved everything up slightly */
 
 .audio{
   display: block;
   margin: auto;
 }
+/* here i styled the margin as 'auto' so that the audio stayed centre aligned */
 
 .synopsis p{
   font-size: 18px;
@@ -119,19 +120,22 @@ body{
   font-family: serif;
 }
 
-/* i learnt from w3schools how to style things within a class, for example here, the p comes after the class name to style the p inside that class*/
+/* i learnt from w3schools how to style elements within a class, for example here, the p comes after the class name to style the <p> elements inside that class*/
 .video {
   display: block;
   border-style: solid;
   border-color: rgb(60,60,60);
   border-radius: 10px;
 }
+/* i didnt feel like the video needed a margin as it sat comfortably in the page without one*/
 
 .footer{
   font-size: 20px;
   text-align: center;
-  color:black;
+  color:white;
   border-style: solid;
+  margin: 20px;
 }
+/* i styled the colour of the footer as white instead of what it was originally styled as as black as it seperated this from the other text about the film*/
 
 /* the majority of my styling i learnt from w3schools.com, for example how style the class by adding a '.' at the beginning of a class name. */
