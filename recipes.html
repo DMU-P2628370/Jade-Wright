@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Cooking Recipes and Tips</title>
+  </head>
+  <body>
+    <!--menu-->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="tips.html">Tips</a>
+          </div>
+        </div>
+        <div class="menu">
+           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+        </div>
+
+
+    <div class="RecipesPage">
+      <div class="header">
+        <h2>Recipes</h2>
+        <p>Here are a few recipes that I personally like and ones that I want to try in the future. These recipes can be used as inspiration or to copy.</p>
+      </div>
+
+<!--flex-->
+        <div class="flex-container">
+          <div>
+            <h3> Recipes I Like</h3>
+            <div class="slideshow-container2">
+             <div class="mySlides fade">
+               <img src="img/slide1.jpg" style="width:90%">
+             </div>
+             <div class="mySlides fade">
+               <img src="img/slide2.jpg" style="width:90%">
+             </div>
+             <div class="mySlides fade">
+               <img src="img/slide3.jpg" style="width:90%">
+             </div>
+             <a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next2" onclick="plusSlides(1)">&#10095;</a>
+           </div>
+         </div>
+
+          <div class="RecipesToTry">
+             <h3> Recipes To Try </h3>
+             <div class="slideshow-container3">
+              <div class="mySlides2 fade">
+                <img src="img/Try1.jpg" style="width:90%">
+              </div>
+              <div class="mySlides2 fade">
+                <img src="img/Try2.jpg" style="width:90%">
+              </div>
+              <div class="mySlides2 fade">
+                <img src="img/Try3.jpg" style="width:90%">
+              </div>
+              <a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next2" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+<!--tutorials-->
+
+        <!-- Slideshow container -->
+        <div class="tutorials-container">
+          <div> <h3> Cooking Tutorials </h3>
+            <div class="slideshow-container4">
+              <div class="mySlides3 fade">
+                <iframe width="650" height="315" src="https://www.youtube.com/embed/FTociictyyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="mySlides3 fade">
+                <iframe width="650" height="315" src="https://www.youtube.com/embed/EVpBQPw6xTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="mySlides3 fade">
+                <iframe width="650" height="315" src="https://www.youtube.com/embed/WNABbYLsyuE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+
+
+
+      <script>
+
+
+
+
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+      showSlides(slideIndex = n);
+      }
+
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides2");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+
+
+
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+      showSlides(slideIndex = n);
+      }
+
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+
+      //menu
+
+          function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+        </script>
+  </body>
+</html>
