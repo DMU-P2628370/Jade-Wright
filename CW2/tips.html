@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Cooking Recipes and Tips</title>
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="tips.html">Tips</a>
+        </div>
+      </div>
+
+        <div class="menu">
+           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+        </div>
+
+        <div class="Safety" >
+          <h2> Tips </h2>
+          <h3> Safety Tips In The Kitchen </h3>
+            <p> Here are a few simple tips that will increase your safety while in the kitchen. This is especially good for beginners, but also a good reminder for experienced chefs or people who spend a lot of time in the kitchen as these saefty precautions can easily slip away with time and comfort. </p>
+              <div class="flex-container">
+                <div>
+                <h3> Knives and Chopping </h3>
+                <ul class="bullets">
+                <li> Always concentrate. Never engage in coversation while chopping. </li>
+                <p> </p>
+                <li>Use a chopping board. Peferably colour coded for specific foods (go to sanitising within the Hygeine section)</li>
+                <p> </p>
+                <li> Always use sharp knives. Duller/blunt knives are harder to work with causing more accidents</li>
+              </ul>
+              </div>
+              <div>
+                <h3> Fire Hazzards </h3>
+                <ul class="bullets">
+                  <li> Never leave tea towels close to the hob </li>
+                  <p> </p>
+                  <li> Don't leave food cooking unattended </li>
+                  <p> </p>
+                  <li> Don't leave wooden spoons hanging over the edge of saucepans </li>
+                  <p> </p>
+                  <li> Always make sure that your fire alarms are working </li>
+              </div>
+            </div>
+          <h3> Hygeine In The Kitchen </h3>
+          <div class="flex-container">
+            <div>
+              <h3> Sanitising </h3>
+              <ul class="bullets">
+                <li> Use specific chopping boards for meat and vegetables to avoid cross contamination</li>
+                <p> </p>
+                <li> Sanitise all work top surafces before and after use </li>
+                <p> </p>
+                <li> Always wash hands before and after touching any food </li>
+                <p></p>
+                <li> Wash all fruit and vegetables to get rid of bacteria and germs already on there </li>
+            </div>
+            <div>
+              <h3> Personal Hygeine </h3>
+                <ul class="bullets">
+                <li> Wash hands </li>
+                <p> </p>
+                <li> Wear an apron to avoid germs from clothes getting into food </li>
+                <p> </p>
+                <li> Tie all hair up or wear a hair net </li>
+                <p> </p>
+                <li> Wear a blue plaster if you have any cuts </li>
+                <p> </p>
+                <li> Roll sleeves up to aviod germs from clothing touching the food</li>
+              </div>
+            </div>
+          </div>
+
+
+    <script>
+//menu
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+      </script>
+
+  </body>
+</html>

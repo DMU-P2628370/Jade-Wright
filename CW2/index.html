@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <meta charset="utf-8">
+   <title>Cooking Recipes and Tips</title>
+  </head>
+ <!--here is the code for the overlay menu, which was copied from the tutorial on "w3schools.com" certain elements of this were changed within the stylesheet-->
+      <body>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="index.html">Home</a>
+              <a href="recipes.html">Recipes</a>
+              <a href="tips.html">Tips</a>
+            </div>
+          </div>
+            <div class="menu">
+               <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+            </div>
+        <div class="header">
+         <div class="welcome">
+           <!-- Here is the main body of the website, starting with a simple heading followed by some text explain what is within the website that has been created so that users straight away can know if they woul dlike to stay -->
+           <h2> Welcome </h2>
+           <p> A recipe, and cooking tips website that aims makes your life easier while in the kitchen. Perfect for anyone to use.</p>
+         </div>
+       </div>
+
+<!-- Code was partly copied from w3schools to create a simple slideshow with arrows displaying 3 of my own favourite recipes.  -->
+<!--I split the slideshow into 2 divs, one that would control the background of the slideshow, and the other to control the slides   -->
+       <div class="slideshow-background">
+         <div>
+           <h3> 3 Quick and Simple Recipes </h3>
+         <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="img/RecipeImg.jpg" style="width:40%">
+          </div>
+          <div class="mySlides fade">
+            <img src="img/RecipeImg2.jpg" style="width:40%">
+          </div>
+          <div class="mySlides fade">
+            <img src="img/RecipeImg3.jpg" style="width:40%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+      <!-- i decided to style certain elements of the  slides, such as the sizing, within the html page as it was easier to naviagte and access.-->
+      <!-- within this code it provides a link to 3 images which include the recipes of my own. -->
+
+
+
+
+
+
+
+
+
+
+  <script>
+
+//slideshow 1
+
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+          }
+//menu
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+          }
+
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+          </script>
+        </body>
+      </html>
