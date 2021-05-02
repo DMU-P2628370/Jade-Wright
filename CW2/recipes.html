@@ -19,14 +19,14 @@
         <div class="menu">
            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
         </div>
-
-
+<!--Again, the menu code was repeated within the second page, to allow users to navigate arounf the site easily-->
+<!--i devided the page up various classes, there is a main class that controls the whole page, then for each sub section divs are inseted and classes are added for style reasons -->
     <div class="RecipesPage">
       <div class="header">
         <h2>Recipes</h2>
         <p>Here are a few recipes that I personally like and ones that I want to try in the future. These recipes can be used as inspiration or to copy.</p>
       </div>
-
+<!-- a slideshow is contained within a flex container, so that two slideshows could sit besides each other. This is something i struggled with and did nit achieve what i wanted -->
 <!--flex-->
         <div class="flex-container">
           <div>
@@ -45,7 +45,7 @@
              <a class="next2" onclick="plusSlides(1)">&#10095;</a>
            </div>
          </div>
-
+<!-- the first slideshow works well, however i could not figure out why the seconf one did not. i couldnt figure out if it was the html or the Java Script -->
           <div class="RecipesToTry">
              <h3> Recipes To Try </h3>
              <div class="slideshow-container3">
@@ -66,9 +66,9 @@
 
 
 
-
-
-
+<!--i then decided to add in some tutorials, so i contained that within class of its own, and embedded three youtube videos-->
+<!-- i attempted to display these as a slideshow, however, because i copied the embedded code from youtube i somehow couldnt access some of the code-->
+<!-- i think with more knowledge and time it could have been achieved but it was soemthing that took a large sum of time trying to figure out-->
 <!--tutorials-->
 
         <!-- Slideshow container -->
@@ -86,63 +86,29 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
 
 
 
-      <script>
-
-
-
-
-
+  <script>
+//The javascript was something applied to the slideshow and menu to allow movement of the elemnts -->
+      
       var slideIndex = 1;
       showSlides(slideIndex);
 
-      // Next/previous controls
+  // Next/previous controls
       function plusSlides(n) {
       showSlides(slideIndex += n);
       }
 
-      // Thumbnail image controls
+  // Thumbnail image controls
       function currentSlide(n) {
       showSlides(slideIndex = n);
       }
 
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides2");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-      }
-
-
-
-
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      // Next/previous controls
-      function plusSlides(n) {
-      showSlides(slideIndex += n);
-      }
-
-      // Thumbnail image controls
-      function currentSlide(n) {
-      showSlides(slideIndex = n);
-      }
-
-
+//menu
         function showSlides(n) {
           var i;
           var slides = document.getElementsByClassName("mySlides");
@@ -159,7 +125,6 @@
           dots[slideIndex-1].className += " active";
         }
 
-      //menu
 
           function openNav() {
             document.getElementById("myNav").style.width = "100%";
